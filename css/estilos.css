@@ -1,0 +1,34 @@
+*{
+    font-style:italic;
+}
+header{
+    background-color: black;
+}
+body{
+    background-color: black;
+}
+main{
+    background:white;
+    padding-bottom: 20%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.centrar{
+    text-align:center;
+}
+header{
+    padding-bottom: 80px;
+}
+.imagen{
+    text-align: center;
+    padding-top: 1%;
+    margin-bottom: -3%;
+    margin-left: 32%;
+}
+
+@media (min-width: 1025px) {
+.h-custom {
+height: 100vh !important;
+}
+}
+

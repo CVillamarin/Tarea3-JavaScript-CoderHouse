@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootsrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Proyecto</title>
+</head>
+<body>
+    <header>
+       <img class="imagen" src="imagenes/header.png">
+    </header>
+    <main>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Impresiones 3D</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    Carrito de compras <i class="bi bi-bag-check-fill"></i>
+                </button>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="items"></tbody>
+                                <tfoot>
+                                    <tr id="footer">
+                                    <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                                    </tr>
+                                </tfoot>
+                                </table>
+                            <div class="row" id="cards"></div>
+                        </div>
+                    
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Terminar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div id="contenedor-productos" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="card">
+                        <img src="imagenes/pastillero.jfif" class="card-img-top" alt="Brownie">
+                        <div class="card-body">
+                            <h5>Pastilleros</h5>
+                            <p>$500</p>
+                            <button class="btn btn-success">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+    <footer>
+    </footer>
+    <script src="./codigo.js"></script>
+    <script src="bootsrap/js/bootstrap.js"></script>
+</body>
+</html>
